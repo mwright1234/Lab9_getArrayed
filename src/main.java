@@ -19,6 +19,13 @@ class Lab9_getArrayed {
             System.out.print(dataPoints[i] + (i < dataPoints.length - 1 ? " | " : "\n"));
         }
 
+        // task 4
+        int sum = 0;
+        for (int num : dataPoints) {
+            sum += num;
+        }
+
+        // task 5
 
 
 
