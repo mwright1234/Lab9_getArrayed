@@ -14,6 +14,10 @@ class Lab9_getArrayed {
             dataPoints[i] = rnd.nextInt(100) + 1;
         }
 
+        // task 3
+        for (int i = 0; i < dataPoints.length; i++) {
+            System.out.print(dataPoints[i] + (i < dataPoints.length - 1 ? " | " : "\n"));
+        }
 
 
 
