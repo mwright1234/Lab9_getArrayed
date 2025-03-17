@@ -68,10 +68,16 @@ class Lab9_getArrayed {
         System.out.println("The minimum value in the array is: " + min);
         System.out.println("The maximum value in the array is: " + max);
 
-        //
+        // task 9
+        System.out.println("Average of dataPoints is: " + getAverage(dataPoints));
+    }
 
-
-
+    public static double getAverage(int values[]) {
+        int sum = 0;
+        for (int num : values) {
+            sum += num;
+        }
+        return sum / (double) values.length;
     }
 }
 
