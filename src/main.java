@@ -78,6 +78,7 @@ class Lab9_getArrayed {
             sum += num;
         }
         return sum / (double) values.length;
+
     }
 }
 
