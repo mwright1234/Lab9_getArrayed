@@ -37,6 +37,13 @@ class Lab9_getArrayed {
             if (num == userValue) {
                 count++;
 
+            }
+        }
+        // task 7
+        int position = -1;
+        for (int i = 0; i < dataPoints.length; i++) {
+            if (dataPoints[i] == userValue) {
+                position = i;
 
             }
         }
