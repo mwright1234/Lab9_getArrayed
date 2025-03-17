@@ -40,12 +40,22 @@ class Lab9_getArrayed {
             }
         }
         // task 7
+        int searchValue = SafeInput.getRangedInt(in, "Enter another number between 1 and 100 to search: ", 1, 100);
         int position = -1;
         for (int i = 0; i < dataPoints.length; i++) {
-            if (dataPoints[i] == userValue) {
+            if (dataPoints[i] == searchValue) {
                 position = i;
-
+                break;
             }
         }
+        if (position != -1) {
+            System.out.println("The value " + searchValue + " was found at index " + position + ".");
+        } else {
+            System.out.println("The value " + searchValue + " was not found in the array.");
+        }
+
+    }
+        }
+
     }
 }
