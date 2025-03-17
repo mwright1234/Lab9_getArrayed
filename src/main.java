@@ -39,6 +39,7 @@ class Lab9_getArrayed {
 
             }
         }
+        System.out.print("you number is found: " + count + " times.\n");
         // task 7
         int searchValue = SafeInput.getRangedInt(in, "Enter another number between 1 and 100 to search: ", 1, 100);
         int position = -1;
@@ -53,9 +54,25 @@ class Lab9_getArrayed {
         } else {
             System.out.println("The value " + searchValue + " was not found in the array.");
         }
-
-    }
+        // task 8
+        int min = dataPoints[0];
+        int max = dataPoints[0];
+        for (int num : dataPoints) {
+            if (num < min) {
+                min = num;
+            }
+            if (num > max) {
+                max = num;
+            }
         }
+        System.out.println("The minimum value in the array is: " + min);
+        System.out.println("The maximum value in the array is: " + max);
+
+        //
+
+
 
     }
 }
+
+
