@@ -24,12 +24,21 @@ class Lab9_getArrayed {
         for (int num : dataPoints) {
             sum += num;
         }
+        double average = sum / 100.0;
+        System.out.println("the sum of the array is: " + sum);
+        System.out.println("the average of the array is: " + average);
 
         // task 5
+        int userValue = SafeInput.getRangedInt(in, "Enter a number between 1 and 100: ", 1, 100);
+
+        // task 6
+        int count = 0;
+        for (int num : dataPoints) {
+            if (num == userValue) {
+                count++;
 
 
-
-
-
+            }
+        }
     }
 }
